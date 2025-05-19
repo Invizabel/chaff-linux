@@ -28,7 +28,7 @@ echo "chaff-linux" | sudo tee "${HOME}/LIVE_BOOT/chroot/etc/hostname"
 # Install system packages
 sudo chroot "${HOME}/LIVE_BOOT/chroot" bash -c "
 apt-get update &&
-apt-get install -y linux-image-amd64 live-boot systemd-sysv python3 python3-pip shim-signed &&
+apt-get install -y linux-image-amd64 live-boot systemd-sysv python3 python3-pip &&
 echo 'root:chaff' | chpasswd &&
 pip install chaff --break-system-packages
 "
