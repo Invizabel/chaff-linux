@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+sudo rm -rf ~/LIVE_BOOT
+
 sudo apt-get install -y \
     debootstrap \
     squashfs-tools \
